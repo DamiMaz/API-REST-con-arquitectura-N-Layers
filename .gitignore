@@ -1,0 +1,31 @@
+﻿## Visual Studio / .NET .gitignore
+.vs/
+.vscode/
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.DotSettings.user
+*.ide
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+.localhistory/
+*.log
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# OS files
+.DS_Store
+Thumbs.db

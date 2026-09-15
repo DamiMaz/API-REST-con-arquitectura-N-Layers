@@ -1,0 +1,6 @@
+@NLayers.Api_HostAddress = http://localhost:5186
+
+GET {{NLayers.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

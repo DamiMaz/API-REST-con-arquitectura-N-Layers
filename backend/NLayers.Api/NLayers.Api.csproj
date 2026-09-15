@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.*">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\layers\NLayers.Presentation\NLayers.Presentation.csproj" />
+    <ProjectReference Include="..\..\layers\NLayers.BusinessLogic\NLayers.BusinessLogic.csproj" />
+    <ProjectReference Include="..\..\layers\NLayers.DataAccess\NLayers.DataAccess.csproj" />
+    <ProjectReference Include="..\..\layers\NLayers.Entities\NLayers.Entities.csproj" />
+    <ProjectReference Include="..\..\core\NLayers.Core\NLayers.Core.csproj" />
+  </ItemGroup>
+
+</Project>
