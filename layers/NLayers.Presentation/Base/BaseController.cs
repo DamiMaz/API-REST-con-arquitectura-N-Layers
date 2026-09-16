@@ -5,7 +5,7 @@ namespace NLayers.Presentation.Base;
 [ApiController]
 public abstract class BaseController : ControllerBase
 {
-    protected IActionResult Success(object? data = null, string message = "OperaciÃ³n exitosa")
+    protected IActionResult Success(object? data = null, string message = "Operación exitosa")
     {
         return Ok(new
         {

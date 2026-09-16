@@ -80,7 +80,7 @@ public class ProductController : BaseController
                 Status = created.Status
             };
 
-            return CreatedResult(output, "El producto se creÃ³ exitosamente");
+            return CreatedResult(output, "El producto se creó exitosamente");
         }
         catch (ArgumentException ex)
         {
@@ -102,7 +102,7 @@ public class ProductController : BaseController
             };
 
             await _productManager.UpdateProductAsync(entity);
-            return Success(null, "El producto se actualizÃ³ exitosamente");
+            return Success(null, "El producto se actualizó exitosamente");
         }
         catch (KeyNotFoundException ex)
         {
@@ -120,7 +120,7 @@ public class ProductController : BaseController
         try
         {
             await _productManager.DeleteProductAsync(id);
-            return Success(null, "El producto se eliminÃ³ exitosamente");
+            return Success(null, "El producto se eliminó exitosamente");
         }
         catch (KeyNotFoundException ex)
         {

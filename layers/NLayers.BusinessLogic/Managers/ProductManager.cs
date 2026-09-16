@@ -74,7 +74,7 @@ public class ProductManager : IProductManager
         var existing = await _productStore.GetByIdAsync(product.Id);
         if (existing == null)
         {
-            throw new KeyNotFoundException($"No se encontrÃ³ el producto con Id {product.Id}.");
+            throw new KeyNotFoundException($"No se encontró el producto con Id {product.Id}.");
         }
 
         existing.Name = product.Name;
@@ -94,7 +94,7 @@ public class ProductManager : IProductManager
         var existing = await _productStore.GetByIdAsync(id);
         if (existing == null)
         {
-            throw new KeyNotFoundException($"No se encontrÃ³ el producto con Id {id}.");
+            throw new KeyNotFoundException($"No se encontró el producto con Id {id}.");
         }
 
         await _productStore.DeleteAsync(id);
